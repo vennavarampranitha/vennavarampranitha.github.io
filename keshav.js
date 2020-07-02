@@ -22,13 +22,12 @@ let yes=false
 let d=document.getElementsByTagName('li')[0]
 d.removeAttribute('onmouseover')
 const b=document.querySelector('.LI-profile-badge')
-b.style.position='absolute';b.style.left='20%';b.style.top='40%';b.style.visibility='hidden';b.style.textAlign='left';
-b.style.zIndex=100
+
 d.onmouseover=ent;d.onmouseleave=lev;
 b.onmouseover=ent;b.onmouseleave=lev;
-window.setInterval(()=>{
-        b.style.visibility=yes?'visible':'hidden'
-},2000)
+// window.setInterval(()=>{
+//         b.style.visibility=yes?'visible':'hidden'
+// },2000)
 const prani = () => {
     console.log('kesh bedda bugga')
 }
